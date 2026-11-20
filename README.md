@@ -1,11 +1,11 @@
 # Fixed Income Risk Analytics
 
-[![CI](https://github.com/YOUR_GITHUB_USERNAME/fixed-income-risk-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/fixed-income-risk-analytics/actions/workflows/ci.yml)
-[![Daily risk report](https://github.com/YOUR_GITHUB_USERNAME/fixed-income-risk-analytics/actions/workflows/daily-report.yml/badge.svg)](https://YOUR_GITHUB_USERNAME.github.io/fixed-income-risk-analytics/)
+[![CI](https://github.com/inalali2/fixed-income-risk-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/inalali2/fixed-income-risk-analytics/actions/workflows/ci.yml)
+[![Daily risk report](https://github.com/inalali2/fixed-income-risk-analytics/actions/workflows/daily-report.yml/badge.svg)](https://inalali2.github.io/fixed-income-risk-analytics/)
 
 An automated pipeline that pulls the Government of Canada yield curve from the Bank of Canada, builds zero and forward curves, prices a bond portfolio, and produces a daily risk report: duration, key rate DV01, stress tests, Value at Risk, principal components of curve moves, and a yield optimizer for portfolio construction.
 
-**Live report:** https://YOUR_GITHUB_USERNAME.github.io/fixed-income-risk-analytics/ (rebuilt every weekday by GitHub Actions)
+**Live report:** https://inalali2.github.io/fixed-income-risk-analytics/ (rebuilt every weekday by GitHub Actions)
 
 ## Why I built this
 
@@ -38,7 +38,7 @@ The charts below come from the bundled synthetic data set so the repo renders wi
 ## Quick start
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/fixed-income-risk-analytics.git
+git clone https://github.com/inalali2/fixed-income-risk-analytics.git
 cd fixed-income-risk-analytics
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -e ".[dev,dashboard]"
