@@ -1,0 +1,15 @@
+id,issuer,sector,sub_sector,rating,coupon,maturity,spread_bp,par_amount
+CAN 2.75 Dec27,Government of Canada,Government,Federal,AAA,2.75,2027-12-01,0,8000000
+CAN 3.00 Jun29,Government of Canada,Government,Federal,AAA,3.00,2029-06-01,0,10000000
+CAN 3.25 Dec31,Government of Canada,Government,Federal,AAA,3.25,2031-12-01,0,7000000
+CAN 3.25 Jun35,Government of Canada,Government,Federal,AAA,3.25,2035-06-01,0,9000000
+CAN 2.75 Dec55,Government of Canada,Government,Federal,AAA,2.75,2055-12-01,0,6000000
+ONT 3.60 Jun30,Province of Ontario,Provincial,Provincial,AA-,3.60,2030-06-02,45,8000000
+ONT 4.15 Jun34,Province of Ontario,Provincial,Provincial,AA-,4.15,2034-06-02,70,7000000
+QUE 4.40 Dec55,Province of Quebec,Provincial,Provincial,AA-,4.40,2055-12-01,105,5000000
+BC 3.90 Jun33,Province of British Columbia,Provincial,Provincial,AA,3.90,2033-06-18,60,4000000
+BANK A 4.20 Mar29,Bank A (illustrative),Corporate,Financials,A,4.20,2029-03-15,85,7000000
+TELCO B 4.75 Nov32,Telecom B (illustrative),Corporate,Communication,BBB,4.75,2032-11-10,150,6000000
+PIPE C 5.10 Apr36,Pipeline C (illustrative),Corporate,Energy,BBB,5.10,2036-04-20,175,5000000
+UTIL D 4.45 Feb53,Utility D (illustrative),Corporate,Utilities,A,4.45,2053-02-25,140,5000000
+INSUR E 4.90 Sep31,Insurer E (illustrative),Corporate,Financials,A-,4.90,2031-09-30,120,3000000

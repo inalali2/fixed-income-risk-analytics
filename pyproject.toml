@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fixed-income-risk-analytics"
+version = "1.0.0"
+description = "Yield curve modelling, bond analytics and automated portfolio risk reporting on Government of Canada data"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scipy>=1.10",
+  "scikit-learn>=1.3",
+  "matplotlib>=3.7",
+  "jinja2>=3.1",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.35", "altair>=5"]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+fi-risk = "fixed_income.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 170
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E731", "B023", "B905"]

@@ -1,0 +1,29 @@
+id,issuer,sector,sub_sector,rating,coupon,maturity,spread_bp,par_amount
+CAN 2.75 Dec27,Government of Canada,Government,Federal,AAA,2.75,2027-12-01,0,8000000
+CAN 3.00 Jun29,Government of Canada,Government,Federal,AAA,3.00,2029-06-01,0,10000000
+CAN 3.25 Dec31,Government of Canada,Government,Federal,AAA,3.25,2031-12-01,0,7000000
+CAN 3.25 Jun35,Government of Canada,Government,Federal,AAA,3.25,2035-06-01,0,9000000
+CAN 2.75 Dec55,Government of Canada,Government,Federal,AAA,2.75,2055-12-01,0,6000000
+ONT 3.60 Jun30,Province of Ontario,Provincial,Provincial,AA-,3.60,2030-06-02,45,8000000
+ONT 4.15 Jun34,Province of Ontario,Provincial,Provincial,AA-,4.15,2034-06-02,70,7000000
+QUE 4.40 Dec55,Province of Quebec,Provincial,Provincial,AA-,4.40,2055-12-01,105,5000000
+BC 3.90 Jun33,Province of British Columbia,Provincial,Provincial,AA,3.90,2033-06-18,60,4000000
+BANK A 4.20 Mar29,Bank A (illustrative),Corporate,Financials,A,4.20,2029-03-15,85,7000000
+TELCO B 4.75 Nov32,Telecom B (illustrative),Corporate,Communication,BBB,4.75,2032-11-10,150,6000000
+PIPE C 5.10 Apr36,Pipeline C (illustrative),Corporate,Energy,BBB,5.10,2036-04-20,175,5000000
+UTIL D 4.45 Feb53,Utility D (illustrative),Corporate,Utilities,A,4.45,2053-02-25,140,5000000
+INSUR E 4.90 Sep31,Insurer E (illustrative),Corporate,Financials,A-,4.90,2031-09-30,120,3000000
+CAN 3.50 Mar28,Government of Canada,Government,Federal,AAA,3.50,2028-03-01,0,1000000
+CAN 2.75 Sep30,Government of Canada,Government,Federal,AAA,2.75,2030-09-01,0,1000000
+CAN 3.00 Jun34,Government of Canada,Government,Federal,AAA,3.00,2034-06-01,0,1000000
+CAN 3.50 Dec45,Government of Canada,Government,Federal,AAA,3.50,2045-12-01,0,1000000
+ONT 4.65 Jun41,Province of Ontario,Provincial,Provincial,AA-,4.65,2041-06-02,95,1000000
+QUE 3.65 May32,Province of Quebec,Provincial,Provincial,AA-,3.65,2032-05-20,62,1000000
+ALTA 3.10 Jun28,Province of Alberta,Provincial,Provincial,AA,3.10,2028-06-01,38,1000000
+BC 4.25 Dec53,Province of British Columbia,Provincial,Provincial,AA,4.25,2053-12-18,98,1000000
+BANK F 3.80 Jan28,Bank F (illustrative),Corporate,Financials,A+,3.80,2028-01-26,70,1000000
+BANK G 4.35 Jun33,Bank G (illustrative),Corporate,Financials,A,4.35,2033-06-12,115,1000000
+REIT H 5.30 Feb31,REIT H (illustrative),Corporate,Real Estate,BBB,5.30,2031-02-14,185,1000000
+RAIL I 4.60 May47,Railway I (illustrative),Corporate,Industrials,A,4.60,2047-05-01,130,1000000
+GROC J 4.95 Oct34,Grocer J (illustrative),Corporate,Consumer Staples,BBB,4.95,2034-10-05,160,1000000
+POWER K 4.10 Mar30,Power K (illustrative),Corporate,Utilities,A-,4.10,2030-03-18,95,1000000

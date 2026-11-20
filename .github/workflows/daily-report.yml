@@ -1,0 +1,53 @@
+# Pulls the latest Government of Canada curve every weekday evening, reruns the
+# full risk report and publishes it to GitHub Pages.
+# One time setup: repo Settings > Pages > Source: "GitHub Actions".
+name: Daily risk report
+
+on:
+  schedule:
+    - cron: "17 23 * * 1-5"   # 23:17 UTC, after the Bank of Canada posts daily yields
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Restore market data cache
+        uses: actions/cache@v4
+        with:
+          path: data/market.db
+          key: market-db-${{ github.run_id }}
+          restore-keys: market-db-
+      - name: Incremental data update
+        run: fi-risk update --sources boc credit
+      - name: Build report on live data
+        run: fi-risk report --source boc --no-refresh --out reports/latest
+      - name: Assemble site
+        run: |
+          mkdir -p site
+          cp -r reports/latest/* site/
+          cp site/risk_report.html site/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
